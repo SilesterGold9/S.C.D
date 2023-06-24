@@ -1,0 +1,116 @@
+/* Estilos para o corpo da página */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.hui {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a.link-secondary:hover {
+  color: #6c757d;
+}
+
+nav a.link-dark-active {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+nav a.link-dark:hover {
+  color: #0d6efd;
+}
+
+/* Estilo para os cards dos abrigos */
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alterado de 'space-between' para 'center' */
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.company-card {
+  background: #f4f4f4;
+  border: 1px solid #c7c7c7;
+  box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+}
+
+.company-card img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.company-card h2 {
+  color: #0747a6;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-card p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para o título "Perfis de Abrigos" */
+section h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Estilos para o rodapé da página */
+footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #999;
+  border-top: 1px solid #ddd;
+}
+
+h1 {
+  background-color: #1969be; /* azul */
+}
+
+.company-card h2 {
+  background-color: #1969be;
+  color: #fff; /* azul */
+}

@@ -1,0 +1,347 @@
+/* Estilo padrão para todos os dispositivos */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+}
+
+/* Estilo para a tabela */
+table {
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Estilo para as células da tabela */
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilo para as células do cabeçalho da tabela */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Estilo para os botões */
+.btn {
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para os botões quando passa o mouse por cima */
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilo para os botões de deletar */
+.btn-delete {
+  background-color: #fff;
+  border-color: #c0392b;
+  color: #c0392b;
+}
+/* Estilo para os botões de bloquear */
+.btn-block {
+  background-color: #fff;
+  border-color: #726;
+  color: #65249b;
+}
+
+/* Estilo para os botões de editar */
+.btn-edit {
+  background-color: #fff;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 600px) {
+  /* Estilo para o cabeçalho */
+  header {
+    padding: 10px;
+  }
+
+  /* Estilo para a tabela */
+  table {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
+
+/* Responsividade para tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilo para o cabeçalho */
+  header {
+    padding: 15px;
+  }
+
+  /* Estilo para a tabela */
+  table {
+    margin: 15px auto;
+    width: 90%;
+  }
+}
+
+/* Responsividade para desktops */
+@media screen and (min-width: 1025px) {
+  /* Estilo para o cabeçalho */
+  header {
+    padding: 20px;
+  }
+
+  /* Estilo para a tabela */
+  table {
+    margin: 20px auto;
+    width: 80%;
+  }
+}
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    justify-content: center;
+  }
+
+  .search-container input[type="text"],
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .search-container input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+
+#cab {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: grey;
+  width: 10rem;
+  padding: 10px;
+  border: 2px solid #484d50;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin: 10px 2px 0 10px;
+  transition: all 2s linear;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-container form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f2f5;
+  box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+  font-size: 16px;
+  color: #444;
+  margin-right: 10px;
+}
+
+.search-container input[type="text"]:focus {
+  outline: none;
+}
+
+.search-container button[type="submit"] {
+  border: none;
+  background-color: #4b88a2;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button[type="submit"]:hover {
+  background-color: #2f4e65;
+}
+
+a[href="cab.php"] {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #007bff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px #c2c2c2, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+
+a[href="cab.php"]:hover {
+  background-color: #007bff;
+  color: #f1f1f1;
+  box-shadow: 3px 3px 10px #b3b3b3, -3px -3px 10px #ffffff;
+}
+
+a[href="cab.php"]:active {
+  background-color: #0056b3;
+  color: #f1f1f1;
+  box-shadow: inset 2px 2px 5px #b3b3b3, inset -2px -2px 5px #ffffff;
+}
+a[href="cab.php"] {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #007bff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px #c2c2c2, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  a[href="cab.php"] {
+    margin-right: 10px;
+  }
+}
+
+/* Estilos para a mensagem de boas-vindas */
+header#above {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #f2f2f2;
+  box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
+}
+
+header#above h1 {
+  margin: 0;
+  font-size: 32px;
+  text-align: center;
+  color: #0099ff;
+}
+
+/* Estilos para o contador de usuários */
+#contador {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 200px;
+  background: linear-gradient(to right, #0099ff, #00ccff);
+  border-radius: 20px;
+  box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
+}
+
+#contador span:first-child {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#contador span:last-child {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #above {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #contador {
+    margin-top: 10px;
+  }
+
+  #huh {
+    position: static;
+    margin-top: 10px;
+  }
+}
