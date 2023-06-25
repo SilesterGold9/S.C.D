@@ -74,7 +74,7 @@
         <div class="carousel-item active">
             <img src="pics\20230515_151055.jpg" class="d-block w-100" alt="Imagem 1">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Mingo</h5>
+                <h5>Miles</h5>
                 <p>Encontrado no bairro da Lage</p>
             </div>
         </div>
